@@ -12,5 +12,7 @@ library(arsenal)
 
 imdb_title.ratings <- read_tsv("~/Downloads/title.ratings.tsv", na = "\\N", quote = '')
 str(imdb_title.ratings)
+head(imdb_title.ratings)
 
 hist(imdb_title.ratings$averageRating)
+ggplot(imdb_title.ratings)
